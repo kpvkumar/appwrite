@@ -11,10 +11,10 @@ require_once(__DIR__ . '/../vendor/autoload.php');
 return function ($context) {
 
     if ($context->req->method === 'GET') {
-        die('GET');
+        return $context->res->send('GET');
     }
     if ($context->req->method === 'POST') {
-        die('POST');
+        return $context->res->send('POST');
     }
     exit;
 
