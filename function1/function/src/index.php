@@ -2,9 +2,9 @@
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 
-use Appwrite\Client;
-use Appwrite\Exception;
-use Appwrite\Services\Database;
+// use Appwrite\Client;
+// use Appwrite\Exception;
+// use Appwrite\Services\Database;
 
 // This is your Appwrite function
 // It's executed each time we get a request
