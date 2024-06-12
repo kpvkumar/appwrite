@@ -10,6 +10,14 @@ use Appwrite\Services\Database;
 // It's executed each time we get a request
 return function ($context) {
 
+    if ($context->req->method === 'GET') {
+        die('GET');
+    }
+    if ($context->req->method === 'POST') {
+        die('POST');
+    }
+    exit;
+
     $client = new Client();
     $client
         ->setEndpoint('https://cloud.appwrite.io/v1') // Your Appwrite Endpoint
